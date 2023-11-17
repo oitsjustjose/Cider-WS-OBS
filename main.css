@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+
+:root {
+  font-family: "Montserrat";
+  --teal: #00e7a9;
+  --height: 64px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+
+  width: 384px;
+  height: var(--height);
+  padding: 1rem;
+  border-radius: 8px;
+
+  color: white;
+  /* background-color: #252525; */
+  background-color: transparent;
+
+  outline: 4px solid var(--teal);
+  outline-offset: -8px;
+}
+
+.main img {
+  width: auto;
+  height: var(--height);
+  margin-right: 1rem;
+  border-radius: 1px;
+}
+
+.main .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main .text b {
+  font-size: 1.15rem;
+}
+
+#artist,
+#album {
+  white-space: nowrap;
+}
+
+.row-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
